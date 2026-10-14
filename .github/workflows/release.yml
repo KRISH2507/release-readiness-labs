@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+  pull_request:
+    branches:
+      - main
+      
 jobs:
   validate-release:
     runs-on: ubuntu-latest
