@@ -30,5 +30,5 @@ jobs:
           chmod +x scripts/deploy.sh
           VERSION=$(node -p "require('./app/package.json').version")
           echo "Deploying version: $VERSION"
-          ./scripts/deploy.sh
+          ./scripts/deploy.sh-
       
