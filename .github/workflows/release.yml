@@ -8,7 +8,7 @@ on:
   pull_request:
     branches:
       - main
-      
+
 jobs:
   validate-release:
     runs-on: ubuntu-latest
@@ -34,5 +34,5 @@ jobs:
           chmod +x scripts/deploy.sh
           VERSION=$(node -p "require('./app/package.json').version")
           echo "Deploying version: $VERSION"
-          ./scripts/deploy.sh-
+          ./scripts/deploy.sh
       
